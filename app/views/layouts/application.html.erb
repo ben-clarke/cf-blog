@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CfBlog</title>
+  <script src="https://use.typekit.net/iyc2twp.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  
+  <%= render "layouts/header" %>
+    <%= yield %>
+
+</body>
+</html>

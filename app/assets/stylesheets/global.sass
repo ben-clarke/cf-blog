@@ -1,0 +1,45 @@
+@import "normalize"
+
+$primary: rgba(64, 157, 182, 0.9)
+$white: #FFFFFF
+$text: #242424
+
+*
+  box-sizing: border-box
+
+body
+  font-family: "Proxima Nova", sans-serif
+  color: $text
+
+h1, h2, h3, h4, h5, h6
+  font-weight: 700
+  
+.clearfix:before,
+.clearfix::after
+  content: " "
+  display: table
+  
+.clearfix:after
+  clear: both
+  
+.wrapper
+  margin: 0 auto
+  width: 95%
+
+.title
+  text-align: center
+  padding: 1em
+
+.btn
+  background: $primary
+  border-radius: 5px
+  padding: 1em 1.6em
+  &:hover
+    border: none
+
+.btn-transparent
+  background: rgba(255, 255, 255, .1)
+  &:hover
+    background: rgba(225, 225, 225, .2)
+		
+@import "header"
