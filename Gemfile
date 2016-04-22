@@ -12,7 +12,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # added gems
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
-gem 'aws-sdk', '~> 2'
+gem 'aws-sdk', '< 2.0'
 
 group :development, :test do
   gem 'byebug'
