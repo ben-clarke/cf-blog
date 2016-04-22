@@ -1,8 +1,8 @@
 @import "normalize"
 
 $primary: rgba(64, 157, 182, 0.9)
-$white: #FFFFFF
-$text: #242424
+$white: #fff
+$text: #c9c9c9
 
 *
   box-sizing: border-box
@@ -25,10 +25,18 @@ h1, h2, h3, h4, h5, h6
 .wrapper
   margin: 0 auto
   width: 95%
+  
+.wrapper_small
+  margin: 0 auto
+  width: 50%
+
+a
+  text-decoration: none
 
 .title
+  color: darken($primary, 3%)
   text-align: center
-  padding: 1em
+  padding: .8em
 
 .btn
   background: $primary
@@ -41,5 +49,7 @@ h1, h2, h3, h4, h5, h6
   background: rgba(255, 255, 255, .1)
   &:hover
     background: rgba(225, 225, 225, .2)
-		
-@import "header"
+  
+@media only screen and (max-width: 768px)
+  .wrapper_small
+    width: 100%

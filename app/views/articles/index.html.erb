@@ -1,0 +1,15 @@
+<h2 class="title">Recent Articles</h2>
+
+<div class="wrapper_small">
+	<% @articles.each do |article| %>
+		 <div class="article">
+			 <h2><%= link_to article.title, article %></h2>
+	  		<p class="date"><%= article.created_at.strftime('%A, %b %d') %></p>
+	  		<p class="content"><%= truncate(article.content, length: 220) %></p>
+		 </div>
+		 <!-- <%= link_to 'Show', article %>
+ 		<%= link_to 'Edit', edit_article_path(article) %>
+ 		<%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %> -->
+	<% end %>
+	
+</div>

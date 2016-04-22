@@ -1,8 +1,12 @@
 <div id="top_header" class="clearfix">
   <div class="wrapper">
-      <a href="/"><h1 class="logo">the code <span>blog</span></h1></a>
-        <nav id="main_nav">
-          <a href="/" class="btn btn-transparent">Recent Articles</a>
-        </nav>
+      <a href="/"><h1 class="logo">the code blog</h1></a>
+      
+      <a href="#" class="menu"><p>menu</p></a>
+      
+      <nav id="main_nav">
+        <%= link_to 'New Article', new_article_path, class: "btn btn-transparent" %>
+        <%= link_to "Reacent Articles", articles_path, class: "btn btn-transparent" %>
+      </nav>
       </div>
 </div>

@@ -1,23 +1,54 @@
 #top_header
-	text-transform: uppercase
 	background: $primary
 	padding: 1.5em 0
 	.logo
-		font-size: 1em
 		font-weight: 400
+		font-size: 1.15em
 		color: $white
 		float: left
-	
+			
 	#main_nav
-		font-size: .8em
+		font-size: 0.9em
+		z-index: -999
 		padding: 1em
 		float: right
 		a
-			transition: 300ms ease-in-out
+			transition: border 500ms ease-in
 			text-decoration: none
-			margin-right: 1em
+			margin-left: 1em
 			color: $white
-			
-		a.link:hover
-			border-bottom: 1px solid $white
-			padding: .3em 0
+				
+	.menu
+		display: none
+		
+@media only screen and (max-width: 768px)		
+	#main_nav
+		display: none
+		
+	#top_header .menu
+		text-decoration: none
+		margin: 0 0 -1em 0
+		display: block
+		float: right
+		p
+			border: 1px solid $white
+			margin-top: .3em
+			font-weight: 400
+			padding: .8em
+			font-size: .8em
+			color: $white
+			&:hover
+				background: $white
+				color: $text
+				
+	#main_nav a
+		margin-top: .4em
+		
+	#main_nav.active
+		max-width: 100%
+		display: block
+		width: 1440px
+		a
+			display: block
+			&:last-child
+				border-bottom: none

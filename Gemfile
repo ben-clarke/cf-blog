@@ -10,6 +10,9 @@ gem 'turbolinks'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+# added gems
+gem 'paperclip', '~> 4.3', '>= 4.3.6'
+
 group :development, :test do
   gem 'byebug'
 end
